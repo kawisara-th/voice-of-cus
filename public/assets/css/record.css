@@ -1,0 +1,91 @@
+ul.payment-list-warp {
+  list-style-type: none;
+  padding-left: 0%;
+}
+
+.payment-list-warp li.payment-list-item {
+  display: inline-block;
+}
+
+.payment-list-warp li.payment-list-item  input[type="checkbox"][id^="myCheckbox"] {
+  display: none;
+}
+
+ .payment-list-warp li.payment-list-item label {
+  border: 1px solid #fff;
+  padding: 10px;
+  display: block;
+  position: relative;
+  /* margin: 10px; */
+  cursor: pointer;
+}
+
+.payment-list-warp li.payment-list-item label:before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+.payment-list-warp li.payment-list-item  label img {
+  /* height: 100px; */
+  width: 50px;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+.payment-list-warp li.payment-list-item  :checked + label {
+  border-color: #ddd;
+}
+
+.payment-list-warp li.payment-list-item  :checked + label:before {
+  content: "✓";
+  background-color: grey;
+  transform: scale(1);
+}
+
+.payment-list-warp li.payment-list-item  :checked + label img {
+  transform: scale(0.9);
+  /* box-shadow: 0 0 5px #333; */
+  z-index: -1;
+}
+
+.btn {
+  border-radius: 25px;
+  width: 236px;
+  height: 40.92px;
+  background: linear-gradient(189.68deg, #9E94FF 0%, #7E72F2 99.2%);
+  box-shadow: -1px 1px 8px rgba(126, 114, 242, 0.578726);
+  border-radius: 4px;
+  color: #ffffff;
+  margin: 0 auto;
+  display: block;
+}
+
+.btn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-group-1 {
+  font-size: smaller;
+}
+
+.group1 {
+  margin-right: auto;
+  margin-left: 5%;
+}
+
+.datepicker {
+  color: #636b6f;
+}
